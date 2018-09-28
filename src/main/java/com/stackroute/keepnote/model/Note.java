@@ -1,5 +1,6 @@
 package com.stackroute.keepnote.model;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /*
@@ -8,54 +9,84 @@ import java.time.LocalDateTime;
  * any Java objects annotated with the @Entity annotation. If it finds any, then it will begin the 
  * process of looking through that particular Java object to recreate it as a table in your database.
  */
-
+@Entity
+@Table(name = "Note")
 public class Note {
+
+	@Id @Column(name = "Id")
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	int noteId;
+
+	@Column(name = "TITLE")
+	String noteTitle;
+
+	@Column(name = "CONTENT")
+	String noteContent;
+
+	@Column(name = "STATUS")
+	String noteStatus;
+
+	@Column(name = "DATE")
+	LocalDateTime localDate;
+
 
 	public Note() {
 
 	}
 
-	public Note(int i, String string, String string2, String string3, LocalDateTime localDate) {
+	public Note(int i, String title, String content, String status, LocalDateTime localDate) {
+		this.noteId = i;
+		this.noteTitle = title;
+		this.noteContent = content;
+		this.noteStatus = status;
+		this.localDate = localDate;
 	}
 
 	public int getNoteId() {
 
-		return 0;
+		return noteId;
 	}
 
 	public String getNoteTitle() {
 
-		return null;
+		return noteTitle;
 	}
 
 	public String getNoteContent() {
 
-		return null;
+		return noteContent;
 	}
 
 	public String getNoteStatus() {
 
-		return null;
+		return noteStatus;
+	}
+
+	public LocalDateTime getLocalDate() {
+
+		return localDate;
 	}
 
 	public void setNoteId(int parseInt) {
+		this.noteId = parseInt;
 
 	}
 
 	public void setNoteTitle(String parameter) {
+		this.noteTitle = parameter;
 
 	}
 
 	public void setNoteContent(String parameter) {
-
+		this.noteContent = parameter;
 	}
 
 	public void setNoteStatus(String parameter) {
-
+		this.noteStatus = parameter;
 	}
 
 	public void setCreatedAt(LocalDateTime now) {
-
+		this.localDate = now;
 	}
 
 }

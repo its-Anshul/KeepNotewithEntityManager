@@ -2,9 +2,15 @@ package com.stackroute.keepnote.dao;
 
 import java.util.List;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import com.stackroute.keepnote.model.Note;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import javax.transaction.Transactional;
 
 /*
  * This class is implementing the NoteDAO interface. This class has to be annotated with @Repository
@@ -15,15 +21,19 @@ import com.stackroute.keepnote.model.Note;
  * 					transaction. The database transaction happens inside the scope of a persistence 
  * 					context.  
  * */
-
+@Repository
+@Transactional
 public class NoteDAOImpl implements NoteDAO {
+
+    @Autowired
+    private SessionFactory sessionFactory;
 
 	/*
 	 * Autowiring should be implemented for the SessionFactory.
 	 */
 
 	public NoteDAOImpl(SessionFactory sessionFactory) {
-
+        this.sessionFactory = sessionFactory;
 	}
 
 	/*
@@ -31,8 +41,10 @@ public class NoteDAOImpl implements NoteDAO {
 	 */
 
 	public boolean saveNote(Note note) {
-		return false;
-
+	    Session session = sessionFactory.getCurrentSession();
+	    session.save(note);
+	    session.flush();
+		return true;
 	}
 
 	/*
@@ -40,8 +52,10 @@ public class NoteDAOImpl implements NoteDAO {
 	 */
 
 	public boolean deleteNote(int noteId) {
-		return false;
-
+	    Session session = sessionFactory.getCurrentSession();
+	    session.delete(getNoteById(noteId));
+	    session.flush();
+        return true;
 	}
 
 	/*
@@ -49,7 +63,12 @@ public class NoteDAOImpl implements NoteDAO {
 	 * order(showing latest note first)
 	 */
 	public List<Note> getAllNotes() {
-		return null;
+	    String hql = "FROM Note ORDER BY DATE DESC";
+	    Session session = sessionFactory.getCurrentSession();
+	    Query query = session.createQuery(hql);
+	    List<Note> results = query.list();
+	    //session.flush();
+		return results;
 
 	}
 
@@ -57,15 +76,27 @@ public class NoteDAOImpl implements NoteDAO {
 	 * retrieve specific note from the database(note) table
 	 */
 	public Note getNoteById(int noteId) {
-		return null;
+	    String hql = "FROM Note WHERE Id = " + noteId;
+	    Session session = sessionFactory.getCurrentSession();
+	    Query query = session.createQuery(hql);
+	    List<Note> answer = query.list();
+	    //session.flush();
+		return answer.get(0);
 
 	}
 
 	/* Update existing note */
 
 	public boolean UpdateNote(Note note) {
-		return false;
-
+	    /*String hql = "UPDATE Note set TITLE = :notetitle, CONTENT = :content, STATUS=:status, DATE=:date WHERE Id = " +    note.getNoteId();
+	    Session session = sessionFactory.getCurrentSession();
+	    Query query = session.createQuery(hql);
+        query.setParameter("notetitle", note.getNoteTitle());
+        query.setParameter("content", note.getNoteContent());
+        query.setParameter("status", note.getNoteStatus());
+	    query.setParameter("date", note.getLocalDate());*/
+	    sessionFactory.getCurrentSession().update(note);
+	    return true;
 	}
 
 }
