@@ -73,8 +73,11 @@ public class NoteController {
 		note.setNoteStatus(noteStatus);
 		note.setNoteTitle(noteTitle);
 		note.setCreatedAt(LocalDateTime.now());
-		noteDAO.saveNote(note);
-		return "index";
+		if(noteDAO.saveNote(note) == true){
+			return "redirect:/";
+		}else {
+			return "index";
+		}
 	}
 
 	/*
@@ -84,7 +87,9 @@ public class NoteController {
 	 */
 	@RequestMapping(value = "/delete", method = RequestMethod.GET)
 	public String delete(@RequestParam("noteId")int noteId){
-		noteDAO.deleteNote(noteId);
+		if(noteDAO.deleteNote(noteId)){
+			return "redirect:/";
+		}
 		return "index";
 	}
 
@@ -98,7 +103,7 @@ public class NoteController {
 		Note note = new Note(NoteId, NoteTitle, NoteContent, NoteStatus, LocalDateTime.now());
 		noteDAO.UpdateNote(note);
 		model.addAttribute("list", noteDAO.getAllNotes());
-		return "index";
+		return "redirect:/";
 	}
 
 }
