@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="step2.war">
+    <output-path>$PROJECT_DIR$/classes/artifacts/step2_war</output-path>
+    <root id="root">
+      <element id="archive" name="step2.war" />
+    </root>
+  </artifact>
+</component>
