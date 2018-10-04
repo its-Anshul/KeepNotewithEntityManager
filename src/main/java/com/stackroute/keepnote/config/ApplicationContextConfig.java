@@ -2,14 +2,22 @@ package com.stackroute.keepnote.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
+import org.hibernate.ejb.Ejb3Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
+import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.sql.DataSource;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import com.stackroute.keepnote.model.Note;
 
@@ -35,9 +43,9 @@ public class ApplicationContextConfig {
 	public DataSource getDataSource(){
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/step2");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/Step2");
 		dataSource.setUsername("root");
-		dataSource.setPassword("1234567890");
+		dataSource.setPassword("password");
 		return dataSource;
 	}
 
@@ -45,23 +53,41 @@ public class ApplicationContextConfig {
 	 * Define the bean for SessionFactory. Hibernate SessionFactory is the factory
 	 * class through which we get sessions and perform database operations.
 	 */
-	@Bean
-    @Autowired
-    public LocalSessionFactoryBean getSessionFactory(){
-	    LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
-        Properties properties = new Properties();
-        localSessionFactoryBean.setDataSource(getDataSource());
-        properties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        properties.put("hibernate.show_sql", "true");
-        properties.put("hibernate.format_sql", "true");
-        properties.put("hibernate.hbm2ddlauto", "update");
-        localSessionFactoryBean.setHibernateProperties(properties);
 
-        //localSessionFactoryBean.setPackagesToScan("com.stackroute.keepnote.model");
-        localSessionFactoryBean.setAnnotatedClasses(Note.class);
-        return localSessionFactoryBean;
-	}
 
+
+    @Bean
+    LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
+        LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
+        entityManagerFactoryBean.setDataSource(dataSource);
+        entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
+        entityManagerFactoryBean.setPackagesToScan("com.stackroute.keepnote");
+
+        Properties jpaProperties = new Properties();
+
+        //Configures the used database dialect. This allows Hibernate to create SQL
+        //that is optimized for the used database.
+        jpaProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+
+        //Specifies the action that is invoked to the database when the Hibernate
+        //SessionFactory is created or closed.
+        jpaProperties.put("hibernate.hbm2ddl.auto" , "update");
+
+        //Configures the naming strategy that is used when Hibernate creates
+        //new database objects and schema elements
+
+        //If the value of this property is true, Hibernate writes all SQL
+        //statements to the console.
+        jpaProperties.put("hibernate.show_sql", "true");
+
+        //If the value of this property is true, Hibernate will format the SQL
+        //that is written to the console.
+        jpaProperties.put("hibernate.format_sql", "true");
+
+        entityManagerFactoryBean.setJpaProperties(jpaProperties);
+
+        return entityManagerFactoryBean;
+    }
 	/*
 	 * Define the bean for Transaction Manager. HibernateTransactionManager handles
 	 * transaction in Spring. The application that uses single hibernate session
@@ -71,11 +97,10 @@ public class ApplicationContextConfig {
 	 * ensures data integrity.
 	 */
 
-	@Bean
-    @Autowired
-    public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory){
-	    HibernateTransactionManager hibernateTransactionManager = new HibernateTransactionManager();
-	    hibernateTransactionManager.setSessionFactory(sessionFactory);
-	    return hibernateTransactionManager;
+    @Bean
+    JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+    JpaTransactionManager transactionManager = new JpaTransactionManager();
+    transactionManager.setEntityManagerFactory(entityManagerFactory);
+        return transactionManager;
     }
 }

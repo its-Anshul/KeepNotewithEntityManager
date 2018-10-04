@@ -18,7 +18,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- Dependency for Spring Web MVC to be added -->
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		<dependency>
@@ -110,6 +109,18 @@
             <version>2.22.0</version>
             <scope>test</scope>
         </dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.1.9.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>1.8.0.7</version>
+		</dependency>
 
 
     </dependencies>

@@ -7,12 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74f918ac-8e25-4ced-98e2-6e09f1b6d639" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/step2_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__hsqldb_hsqldb_1_8_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_1_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_0_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/config/WebMvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/config/WebMvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KeepNote-Step2-Boilerplate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KeepNote-Step2-Boilerplate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate/WEB-INF/classes/com/stackroute/keepnote/dao/NoteDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate/WEB-INF/classes/com/stackroute/keepnote/dao/NoteDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate/WEB-INF/classes/com/stackroute/keepnote/model/Note.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate/WEB-INF/classes/com/stackroute/keepnote/model/Note.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/config/ApplicationContextConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/config/WebAppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/config/WebMvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/controller/NoteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/dao/NoteDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/dao/NoteDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackroute/keepnote/model/Note.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.stackroute.keepnote.test.NoteControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.stackroute.keepnote.test.NoteControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.stackroute.keepnote.test.NoteDAOImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.stackroute.keepnote.test.NoteDAOImplTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.stackroute.keepnote.test.NoteControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.stackroute.keepnote.test.NoteControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.stackroute.keepnote.test.NoteDAOImplTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.stackroute.keepnote.test.NoteDAOImplTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/stackroute/keepnote/test/NoteDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/stackroute/keepnote/test/NoteDAOImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,97 +91,63 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="12" />
+          <entry key="java" value="17" />
           <entry key="jsp" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="17" />
           <entry key="JSP" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="9" />
+          <entry key="java" value="511" />
           <entry key="jsp" value="193" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="511" />
           <entry key="JSP" value="193" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="307577386">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/controller/NoteController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="71" selection-start-line="71" selection-end-line="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -179,15 +165,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/WebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/controller/NoteController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java" />
       </list>
     </option>
   </component>
@@ -228,6 +214,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,12 +334,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538557366841" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538568573719" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/KeepNote-Step2-Boilerplate" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -370,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Tomcat">
+  <component name="RunManager" selected="JUnit.NoteDAOImplTest">
     <configuration name="NoteControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="KeepNote-Step2-Boilerplate" />
       <extension name="coverage">
@@ -481,11 +467,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.KeepNote-Step2-Boilerplate [clean]" />
-        <item itemvalue="JUnit.NoteControllerTest" />
-        <item itemvalue="JUnit.NoteControllerTest.testDeleteNoteSuccess" />
         <item itemvalue="JUnit.NoteDAOImplTest" />
+        <item itemvalue="JUnit.NoteControllerTest" />
+        <item itemvalue="Maven.KeepNote-Step2-Boilerplate [clean]" />
         <item itemvalue="JUnit.NoteDAOImplTest.testSaveNoteSuccess" />
+        <item itemvalue="JUnit.NoteControllerTest.testDeleteNoteSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -503,41 +489,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="NoteDAOImplTest - 2018.09.28 at 16h 20m 05s.xml">
-      <configuration name="NoteDAOImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoteControllerTest_testMockCreation - 2018.09.28 at 16h 20m 15s.xml">
-      <configuration name="NoteControllerTest.testMockCreation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoteControllerTest - 2018.09.28 at 16h 20m 25s.xml">
-      <configuration name="NoteControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoteDAOImplTest_testSaveNoteSuccess - 2018.10.03 at 14h 24m 36s.xml">
+    <history-entry file="NoteDAOImplTest_testSaveNoteSuccess - 2018.10.03 at 15h 54m 31s.xml">
       <configuration name="NoteDAOImplTest.testSaveNoteSuccess" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NoteDAOImplTest_testSaveNoteSuccess - 2018.10.03 at 14h 25m 25s.xml">
-      <configuration name="NoteDAOImplTest.testSaveNoteSuccess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoteDAOImplTest - 2018.10.03 at 14h 26m 27s.xml">
+    <history-entry file="NoteDAOImplTest - 2018.10.03 at 15h 55m 18s.xml">
       <configuration name="NoteDAOImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NoteControllerTest - 2018.10.03 at 14h 26m 48s.xml">
+    <history-entry file="NoteDAOImplTest_testSaveNoteSuccess - 2018.10.03 at 15h 55m 27s.xml">
+      <configuration name="NoteDAOImplTest.testSaveNoteSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoteDAOImplTest_testSaveNoteSuccess - 2018.10.03 at 15h 56m 26s.xml">
+      <configuration name="NoteDAOImplTest.testSaveNoteSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoteDAOImplTest - 2018.10.03 at 15h 57m 10s.xml">
+      <configuration name="NoteDAOImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoteControllerTest - 2018.10.03 at 16h 06m 51s.xml">
       <configuration name="NoteControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NoteControllerTest_testDeleteNoteSuccess - 2018.10.03 at 14h 27m 28s.xml">
-      <configuration name="NoteControllerTest.testDeleteNoteSuccess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="NoteControllerTest - 2018.10.03 at 14h 28m 23s.xml">
+    <history-entry file="NoteControllerTest - 2018.10.03 at 16h 07m 48s.xml">
       <configuration name="NoteControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NoteControllerTest - 2018.10.03 at 14h 30m 17s.xml">
+    <history-entry file="NoteDAOImplTest - 2018.10.03 at 16h 08m 40s.xml">
+      <configuration name="NoteDAOImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoteControllerTest - 2018.10.03 at 16h 51m 57s.xml">
       <configuration name="NoteControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NoteDAOImplTest - 2018.10.03 at 16h 52m 09s.xml">
+      <configuration name="NoteDAOImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22984837" />
+      <window_info id="UI Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23383878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -545,7 +532,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2593801" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,6 +541,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952693" />
+      <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -592,18 +580,6 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteControllerTest.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor" />
@@ -622,13 +598,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+        <state relative-caret-position="309">
+          <caret line="93" column="115" selection-start-line="93" selection-start-column="115" selection-end-line="93" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1581#1582#0" expanded="true" />
+            <element signature="e#1616#1617#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="124" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-229">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -642,64 +665,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/model/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/stackroute/keepnote/test/NoteControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/controller/NoteController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="87" column="65" selection-start-line="87" selection-start-column="65" selection-end-line="87" selection-end-column="65" />
+        <state relative-caret-position="330">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="50" column="65" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -714,6 +693,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -761,6 +741,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

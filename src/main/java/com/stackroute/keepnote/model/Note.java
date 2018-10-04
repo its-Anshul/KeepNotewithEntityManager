@@ -89,4 +89,9 @@ public class Note {
 		this.localDate = now;
 	}
 
+	@Override
+	public String toString(){
+		return "Note id = " + noteId + ", content" + noteContent + ", status" + noteStatus + ", title" + noteTitle;
+	}
+
 }

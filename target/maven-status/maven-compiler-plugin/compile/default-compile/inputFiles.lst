@@ -1,7 +1,7 @@
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/model/Note.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/controller/NoteController.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/WebMvcConfig.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/dao/NoteDAO.java
-/home/cgi/Desktop/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/WebAppInitializer.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/model/Note.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/WebAppInitializer.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/controller/NoteController.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/dao/NoteDAOImpl.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/WebMvcConfig.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/dao/NoteDAO.java
+/home/anshul/javatest/KeepNote-assignment-solution-step2/src/main/java/com/stackroute/keepnote/config/ApplicationContextConfig.java

@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import java.time.LocalDateTime;
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 import org.hibernate.SessionFactory;
@@ -25,8 +27,8 @@ import com.stackroute.keepnote.model.Note;
 @ContextConfiguration(classes = { ApplicationContextConfig.class })
 public class NoteDAOImplTest {
 
-	@Autowired
-	private SessionFactory sessionFactory;
+	@PersistenceContext
+	private EntityManager sessionFactory;
 
 	private NoteDAO noteDAO;
 	private Note note;
@@ -39,7 +41,7 @@ public class NoteDAOImplTest {
 
 	@After
 	public void tearDown() {
-		Query query = sessionFactory.getCurrentSession().createQuery("DELETE from Note");
+		Query query = sessionFactory.createQuery("DELETE from Note");
 		query.executeUpdate();
 	}
 

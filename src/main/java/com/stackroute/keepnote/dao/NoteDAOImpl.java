@@ -10,6 +10,8 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 /*
@@ -25,14 +27,15 @@ import javax.transaction.Transactional;
 @Transactional
 public class NoteDAOImpl implements NoteDAO {
 
-    @Autowired
-    private SessionFactory sessionFactory;
-
+    //@Autowired
+    //private SessionFactory sessionFactory;
+	@PersistenceContext
+	private EntityManager sessionFactory;
 	/*
 	 * Autowiring should be implemented for the SessionFactory.
 	 */
 
-	public NoteDAOImpl(SessionFactory sessionFactory) {
+	public NoteDAOImpl(EntityManager sessionFactory) {
         this.sessionFactory = sessionFactory;
 	}
 
@@ -41,9 +44,11 @@ public class NoteDAOImpl implements NoteDAO {
 	 */
 
 	public boolean saveNote(Note note) {
-	    Session session = sessionFactory.getCurrentSession();
-	    session.save(note);
-	    session.flush();
+	    //Session session = sessionFactory.;
+	    //session.save(note);
+	    //session.flush();
+		sessionFactory.persist(note);
+		sessionFactory.flush();
 		return true;
 	}
 
@@ -52,10 +57,12 @@ public class NoteDAOImpl implements NoteDAO {
 	 */
 
 	public boolean deleteNote(int noteId) {
-	    Session session = sessionFactory.getCurrentSession();
-	    session.delete(getNoteById(noteId));
-	    session.flush();
-        return true;
+	    //Session session = sessionFactory.getCurrentSession();
+	    //session.delete(getNoteById(noteId));
+	    //session.flush();
+        sessionFactory.remove(getNoteById(noteId));
+        sessionFactory.flush();
+		return true;
 	}
 
 	/*
@@ -63,12 +70,13 @@ public class NoteDAOImpl implements NoteDAO {
 	 * order(showing latest note first)
 	 */
 	public List<Note> getAllNotes() {
-	    String hql = "FROM Note ORDER BY DATE DESC";
-	    Session session = sessionFactory.getCurrentSession();
-	    Query query = session.createQuery(hql);
-	    List<Note> results = query.list();
+	    //String hql = "FROM Note ORDER BY DATE DESC";
+	    //Session session = sessionFactory.getCurrentSession();
+	    //Query query = session.createQuery(hql);
+	    //List<Note> results = query.list();
 	    //session.flush();
-		return results;
+		return sessionFactory.createQuery("FROM Note ORDER BY DATE DESC").getResultList();
+		//return results;
 
 	}
 
@@ -76,11 +84,10 @@ public class NoteDAOImpl implements NoteDAO {
 	 * retrieve specific note from the database(note) table
 	 */
 	public Note getNoteById(int noteId) {
-	    String hql = "FROM Note WHERE Id = " + noteId;
-	    Session session = sessionFactory.getCurrentSession();
-	    Query query = session.createQuery(hql);
-	    List<Note> answer = query.list();
-	    //session.flush();
+	    //String hql = "FROM Note WHERE Id = " + noteId;
+	    //Session session = sessionFactory.getCurrentSession();
+	    //Query query = session.createQuery(hql);
+	    List<Note> answer = sessionFactory.createQuery("FROM Note WHERE Id = " + noteId).getResultList();
 		return answer.get(0);
 
 	}
@@ -95,7 +102,7 @@ public class NoteDAOImpl implements NoteDAO {
         query.setParameter("content", note.getNoteContent());
         query.setParameter("status", note.getNoteStatus());
 	    query.setParameter("date", note.getLocalDate());*/
-	    sessionFactory.getCurrentSession().update(note);
+	    sessionFactory.merge(note);
 	    return true;
 	}
 

@@ -47,7 +47,7 @@ public class NoteController {
 	 * it to the ModelMap which is an implementation of Map, used when building
 	 * model data for use with views. it should map to the default URL i.e. "/index"
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/")
 	public String getAllNotes(ModelMap model){
 		model.addAllAttributes(noteDAO.getAllNotes());
 		return "index";
